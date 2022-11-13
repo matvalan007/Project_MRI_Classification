@@ -1,0 +1,83 @@
+<html>
+    <title>Brain Tumor Classifier</title>
+    <style>
+        body{
+            background-color:#c8d9f5;
+            font-family:sans-serif ;
+        }
+    </style>
+    <body>
+        <center>
+
+            <div style="background-color: black;">
+                <br>
+                <h1 style="color: white;">BRAIN TUMOR CLASSIFIER</h1>
+                <br>
+            </div>
+            <br>
+
+            <table style="padding: 0px 100px;">
+                <tr>
+                    <td colspan="3"> 
+                        <h2 >What is Brain Tumor...?</h2> 
+                        <h3 >&emsp;&emsp;A brain tumor is a mass or growth of abnormal cells in your brain. Many different types of brain tumors exist. Some brain tumors are noncancerous (benign), and some brain tumors are cancerous (malignant). Brain tumors can begin in your brain (primary brain tumors), or cancer can begin in other parts of your body and spread to your brain as secondary (metastatic) brain tumors. How quickly a brain tumor grows can vary greatly. The growth rate as well as the location of a brain tumor determines how it will affect the function of your nervous system.</h3> 
+                    </td>
+
+                    <td><img src="{{ url_for('static', filename='brain tumor.jpg') }}" style="height: 300px;width: 500px" ></td>
+                </tr>
+            </table>
+            
+            <br>
+            <h1>TYPES OF TUMORS</h1>
+            
+            <table style="padding: 0px 300px;">
+                <tr>
+                    <td>
+                        <br><br>
+                        <h3>NO TUMOR</h3>
+                        <img src="{{ url_for('static', filename='notumor.jpg') }}" >
+                        <h4>This implies that the human brain is healthy and has no kind of tumor</h4>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3>MENINGIOMA</h3>
+                        <img src="{{ url_for('static', filename='meningioma.jpg') }}" >
+                        <h4>A meningioma is a tumor that arises from the meninges — the membranes that surround the brain and spinal cord. Although not technically a brain tumor, it is included in this category because it may compress or squeeze the adjacent brain, nerves and vessels. Meningioma is the most common type of tumor that forms in the head. Meningiomas occur more commonly in women and are often discovered at older ages, but they may occur at any age.</h4>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3>GLIOMA</h3>
+                        <img src="{{ url_for('static', filename='glioma.jpg') }}" >
+                        <h4>Glioma is a type of tumor that occurs in the brain and spinal cord. Gliomas begin in the gluey supportive cells (glial cells) that surround nerve cells and help them function. A glioma can affect your brain function and be life-threatening depending on its location and rate of growth.</h4>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <h3>PITUITARY</h3>
+                        <img src="{{ url_for('static', filename='pituitary.jpg') }}" >
+                        <h4>Pituitary tumors are abnormal growths that develop in your pituitary gland. Some pituitary tumors result in too much of the hormones that regulate important functions of your body. Some pituitary tumors can cause your pituitary gland to produce lower levels of hormones. Most pituitary tumors are noncancerous (benign) growths (adenomas). Adenomas remain in your pituitary gland or surrounding tissues and don't spread to other parts of your body.</h4>
+                    </td>
+                </tr>
+            </table>
+           
+
+            <div style="padding-left:30px;background-color: white;width: 35%;">
+                <br>
+                <form method="post", action="{{url_for('home')}}", enctype="multipart/form-data">
+                    <h2>Select image : <input type="file" id="img" name="img" accept="image/*"></h3>
+                    <br>
+                    <input type="submit" , value='predict!'>    
+                </form>
+                <br>
+            </div>
+
+            <h4>COPYRIGHTS © 2022 All Rights Reserved</h4>
+        </center>
+    </body>
+</html>
+

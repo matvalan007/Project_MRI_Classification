@@ -1,0 +1,51 @@
+<html>
+    <body style="background-color: #c8d9f5;font-family: sans-serif;">
+        <center>
+            <h1>PREDICTION : </h1>
+
+            {%if data[0][0] == 1.0%}
+            
+            <h1>Glioma</h1>
+            <h2><u>TREATMENT : </u></h2>
+            <h4>Treatment for glioma depends on the type, size, grade and location of the tumor, as well as your age, overall health and preferences.
+
+                In addition to actions to remove the tumor itself, treatment for glioma may also require using drugs to reduce the signs and symptoms of your tumor.
+                
+                Your doctor may prescribe steroids to reduce swelling and relieve pressure on affected areas of the brain. Anti-epileptic drugs may be used to control seizures</h4>
+            
+            
+
+            {%elif data[0][1] == 1.0%}
+            
+            <h1>Meningioma</h1>
+            <h2><u>TREATMENT : </u></h2>
+            <h4>The treatment you receive for a meningioma depends on many factors, including:<br> <br>
+                ➊ The size and location of the meningioma <br>
+                ➊ The rate of growth or aggressiveness of the tumor <br>
+                ➊ Your age and overall health <br>
+                ➊ Your goals for treatment</h4>
+           
+                
+            {%elif data[0][2] == 1.0%}
+            
+            <h1>No Tumor</h1>
+            <h2><u>HURRAH...!!! YOU DON'T HAVE A TUMOR.... </u></h2>
+
+            
+            {%elif data[0][3] == 1.0%}
+            
+            <h1>Pituitary</h1>
+            <h2><u>TREATMENT : </u></h2>
+            <h4>Many pituitary tumors don't require treatment. Treatment for those that do depends on the type of tumor, its size and how far it has grown into your brain. Your age and overall health also are factors.
+
+                Treatment involves a team of medical experts, possibly including a nose and sinus surgeon, brain surgeon (neurosurgeon), endocrine system specialist (endocrinologist) and a radiation oncologist. Doctors generally use surgery, radiation therapy and medications, either alone or in combination, to treat a pituitary tumor and return hormone production to normal levels.</h4>
+            
+            
+            {%endif%}
+
+            <a href="/">Go back to home page</a>
+            <br><br>
+            <h4>COPYRIGHTS © 2022 All Rights Reserved</h4>
+        </center>
+    </body>
+</html>
