@@ -1,0 +1,43 @@
+<html>
+    <title>Brain Tumor Classifier</title>
+    <style>
+        body{
+            background-color: darksalmon;
+        }
+    </style>
+    <body>
+        <center>
+
+            <div style="background-color: black;">
+                <h1 style="color: white;">BRAIN TUMOR CLASSIFIER</h1>
+            </div>
+            <br>
+            
+            <table style="padding: 0px 100px;">
+                <tr>
+                    <td colspan="3"> 
+                        <h2 >What is Brain Tumor...?</h2> 
+                        <h3 >&emsp;&emsp;A brain tumor is a mass or growth of abnormal cells in your brain. Many different types of brain tumors exist. Some brain tumors are noncancerous (benign), and some brain tumors are cancerous (malignant). Brain tumors can begin in your brain (primary brain tumors), or cancer can begin in other parts of your body and spread to your brain as secondary (metastatic) brain tumors. How quickly a brain tumor grows can vary greatly. The growth rate as well as the location of a brain tumor determines how it will affect the function of your nervous system.</h3> 
+                    </td>
+
+                    <td><img src="{{ url_for('static', filename='brain tumor.jpg') }}" style="height: 300px;width: 500px" ></td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <br><br>
+                        <img src="{{ url_for('static', filename='notumor.jpg') }}" >
+                        
+                    </td>
+                </tr>
+            </table>
+
+            <form method="post", action="{{url_for('home')}}", enctype="multipart/form-data">
+                <b>Select image : <input type="file" id="img" name="img" accept="image/*"></b>
+                <br>
+                <input type="submit" , value='predict!'>    
+            </form>
+        </center>
+    </body>
+</html>
+
