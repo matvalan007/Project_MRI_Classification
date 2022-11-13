@@ -1,6 +1,6 @@
 Flask==2.2.2
 numpy==1.22.1
-opencv_python==4.6.0.66
+opencv-python-headless
 tensorflow-cpu==2.10.0
 gunicorn==20.1.0
 Jinja2
