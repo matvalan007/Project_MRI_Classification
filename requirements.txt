@@ -9,4 +9,3 @@ itsdangerous
 MarkupSafe
 Werkzeug
 scipy
-cv2
