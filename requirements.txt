@@ -9,3 +9,4 @@ itsdangerous
 MarkupSafe
 Werkzeug
 scipy
+pillow
