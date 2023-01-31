@@ -9,3 +9,6 @@ Dependencies:
   * Numpy
   * OpenCV
 
+I have used Tensorflow, Keras to build CNN model to classify the given image as the respective type of tumor.
+Using that model I have created a website to check whether a person is signing or not.
+For this I have used flask framework.
